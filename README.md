@@ -1,17 +1,23 @@
-# CH330_Hardware USB-UART Converter
+# USB-C UART Converter based on CH330
 
-I created this board because I wanted to play with the CH330N because it was supposed to be a crystal-less, <$0.35 USB UART converter in a SOIC-8 package. Since these chips were available from LCSC, I created a quick design and ordered both together.
+![3D Render of the board](./3D_render.png)
 
-As the IC is very small (other USB UART converters are packed in at least a QFN or SOIC-16), I didn't want the board to get much bigger. Accordingly, I developed this 10*10mm USB UART converter board with the CH330N and micro-USB. The assembly is quite fiddly, I suggest that you reflow the USB port and then solder the CH330N (and the LEDs) by hand. If you want to order these boards, I recommend you panelize them.
+CH330 is crystal-less, <$0.35 USB UART converter in a SOIC-8 package. The CH330N
+enumerates as CH340 or CH341 and its transfer speed goes up to ~2Mb/s.
 
-The CH330N enumerates as CH340 or CH341 and its transfer speed goes up to ~2Mb/s.
+Initially based on [Jan Henrik's prototype board][1]
 
-#### [More Info (Twitter Link)](https://twitter.com/JanHenrikH/status/1057014341155872769)
-#### [This project on Kitspace.org](https://kitspace.org/boards/github.com/jan--henrik/ch330_hardware/)
+## BOM
 
-### Images
+| Reference |  Value            |  Mfr. Part            |  Price                     |
+| --------- | ----------------- | --------------------- | -------------------------- |
+| U1        | CH330N            | CH330N                | US$ 0.5518                 |
+| C2, C2    | 100n              | CC0603KRX7R9BB104     | US$ 0.175 for 50           |
+| D1, D2    | LED               | 19-217/R6C-AL1M2VY/3T | US$ 0.282 for 20           |
+| R1, R2    | 220               | 0603WAF2200T5E        | US$ 0.12 for 100           |
+| R3, R4    | 5.1k              | 0603WAJ0512T5E        | US$ 0.12 for 100           |
+| P1        | USB_C_Plug_USB2.0 | U262-161N-4BVC11      | US$ 0.32                   |
+| J2        |                   |                       |                            |
+| PCB       |                   |                       | US$ 20 for 5 with shipping |
 
-![H1](https://pbs.twimg.com/media/DsmIqXtXoAIwU_J.jpg)
-![H2](https://pbs.twimg.com/media/DsmIrubWwAIRDZC.jpg)
-![Front](/images/front.png)
-![Back](/images/back.png)
+[1]: https://github.com/Jan--Henrik/CH330_Hardware
