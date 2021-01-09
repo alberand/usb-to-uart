@@ -1,6 +1,6 @@
 # USB-C UART Converter based on CH330
 
-![3D Render of the board](./3D_render.png)
+[![3D Render of the board](./3D_render.png)][2]
 
 CH330 is crystal-less, <$0.35 USB UART converter in a SOIC-8 package. The CH330N
 enumerates as CH340 or CH341 and its transfer speed goes up to ~2Mb/s.
@@ -21,3 +21,4 @@ Initially based on [Jan Henrik's prototype board][1]
 | PCB       |                   |                       | US$ 20 for 5 with shipping |
 
 [1]: https://github.com/Jan--Henrik/CH330_Hardware
+[2]: https://cloud.cadexchanger.com/app/viewer/5ff9c5427970d5002759ed40
